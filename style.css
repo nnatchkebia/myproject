@@ -47,6 +47,21 @@ body {
 .header-item-2:hover ~ .header-item-1-dropdown {
     visibility: visible;
 }
+
+.header-item-1:hover ~ .header-item-2-dropdown {
+    visibility: visible;
+}
+
+.header-item-2:hover ~ .header-item-2-dropdown {
+    visibility: visible;
+}
+.header-item-3:hover ~ .header-item-2-dropdown {
+    visibility: visible;
+}
+
+.header-item-3:hover ~ .header-item-2-dropdown {
+    visibility: visible;
+}
 .header-item-1-dropdown {
     width: 200px;
     background-color: white;
@@ -58,6 +73,17 @@ body {
     z-index: 1;
 }
 .header-item-2-dropdown {
+    width: 200px;
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    left: -50%;
+    animation: zoomIn 1s liner;
+    z-index: 1;
+}
+
+.header-item-3-dropdown {
     width: 200px;
     background-color: white;
     visibility: hidden;
@@ -87,6 +113,18 @@ body {
 }
 
 .header-item-2-dropdown > ul > li {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.header-item-3-dropdown > ul {
+    margin: 0;
+    padding: 0;
+    padding: 20px 15px;
+}
+
+.header-item-3-dropdown > ul > li {
     font-size: 20px;
     display: block;
     text-align: center;
