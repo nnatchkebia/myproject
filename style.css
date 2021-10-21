@@ -8,21 +8,23 @@ body {
 .header {
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #f4f5f5;
+    background-color: blueviolet;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
+
 }
 
 .logo {
-    height: 150px;
+    height: 100px;
 }
 
 .header-nav {
     display: flex;
+
 }
 
 .header-items {
@@ -42,7 +44,20 @@ body {
     visibility: visible;
 }
 
+.header-item-2:hover ~ .header-item-1-dropdown {
+    visibility: visible;
+}
 .header-item-1-dropdown {
+    width: 200px;
+    background-color: white;
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    left: -50%;
+    animation: zoomIn 1s liner;
+    z-index: 1;
+}
+.header-item-2-dropdown {
     width: 200px;
     background-color: white;
     visibility: hidden;
@@ -60,6 +75,18 @@ body {
 }
 
 .header-item-1-dropdown > ul > li {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.header-item-2-dropdown > ul {
+    margin: 0;
+    padding: 0;
+    padding: 20px 15px;
+}
+
+.header-item-2-dropdown > ul > li {
     font-size: 20px;
     display: block;
     text-align: center;
@@ -100,7 +127,7 @@ li {
 
 .slider {
     width: 100%;
-    height: 500px;
+    height: 50vh;
     position: relative;
 }
 
@@ -180,10 +207,138 @@ li {
       background-color: blueviolet;
 }
 
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+.category-container {
+    width: 100%;
+
+}
+.category-img {
+    display: flex;
+    z-index: 12;
+    cursor: pointer;
+}
+.man,
+.woman,
+.kid {
+    width: calc( 100% / 3);
+    height: 40vh;
+    display: flex;
+
+}
+
+.footer {
+    width: 100%;
+    height: 30vh;
+    background-color: blueviolet;
+    display: block;
+}
+
+.ftr {
+    width: 100px;
+    height: 100px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container {
+            width: 85%;
+            height: 90vh;
+            margin: 0 auto;
+            outline: none;
+            display: grid;
+            grid-template-columns: [col-start] 1fr [col-2] 1fr [col-end] 1fr;
+            grid-template-rows: repeat(3, 350px);
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            border-radius: none;
+            background-color: transparent;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .four,
+        .five,
+        .six {
+            display: flex;
+            height: 10vh;
+        }
+
+        .item:hover {
+            color: white;
+        }
+      
+        li {
+            display: inline;
+            list-style: none;
+        }
+
+        .ggg {
+             opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+        }
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: ;
+  display: block;
+  width: 400px;
+  height: 400px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+
+.container2:hover .image {
+  opacity: 0.6;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 20px;
+}
+
+        ----------------------------------------------------------
 
 @keyframes zoomIn {
     0% { 
@@ -220,6 +375,8 @@ li {
   height: 300px;
 }
 .container {
+    left: 10%;
+    right: 10%;
 padding: 10px;
 }
 
