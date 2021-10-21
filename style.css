@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    font-family: 'Karla-Bold' !important;
+    font-family: 'Karla-Bold';
 }
 
 .header {
@@ -291,7 +291,7 @@ li {
 
 .container {
             width: 85%;
-            height: 90vh;
+            height: 80vh;
             margin: 0 auto;
             outline: none;
             display: grid;
@@ -302,19 +302,25 @@ li {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid black;
+            border: 0.5vh solid black;
             border-radius: none;
             background-color: transparent;
             font-size: 30px;
             font-weight: bold;
             cursor: pointer;
+            margin-right: 10px;
         }
-
+.one,
+.two,
+.three {
+    display: flex;
+            
+}
         .four,
         .five,
         .six {
             display: flex;
-            height: 10vh;
+            height: 9vh;
         }
 
         .item:hover {
