@@ -18,6 +18,9 @@ body {
 
 }
 
+.navbar navbar-expand-lg navbar-light bg-light {
+    width: 100%;
+}
 .logo {
     height: 100px;
 }
@@ -174,7 +177,7 @@ li {
     height: 100%;
     object-fit: cover;
 }
-
+ 
 .slider-button {
     position: absolute;
     background-color: white;
@@ -279,6 +282,7 @@ li {
 .ftr {
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 
 .contact-info {

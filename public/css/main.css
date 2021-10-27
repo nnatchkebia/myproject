@@ -203,14 +203,15 @@ li {
     display: none;
 }
 
+.btn btn-warning{ 
+    position: ;
+}
+
 .navbar {
     position: absolute;
-    width: 350px;
-    height: 100%;
-    background: red;
-    top: 0;
-    left: 0;
+    width: 100%;
 }
+    
 
 .slider {
     width: 100%;
@@ -246,6 +247,9 @@ li {
     transform: translate(-50%, -45%);
 }
 
+.back {
+    width: 100%;
+}
 @keyframes bottomUp {
     0% {
         top: 54%;
