@@ -1,0 +1,14 @@
+.login-form {
+    width: 50%; margin-top: 3rem;
+    margin-left: 25%;
+    border-style:solid; width: 50%; 
+    border-color:solid black;
+    border-radius: 2px;
+    mask-border-width: 15px ;
+    background: whitesmoke;
+    background-attachment: fixed;
+}
+
+.logo-b {
+    margin-right: 50%;
+}

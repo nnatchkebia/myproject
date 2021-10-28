@@ -11,46 +11,81 @@
     <title>Shopping</title>
 </head>
 <body>
+  <!-- /---------------navbar-------------/ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          <a class="nav-link active" aria-current="page" href="#">Adress</a>
+         
+        </div>
+        
+      </div>
+      <!-- <left> <button class="log" style="right:80%;">Login</button></left> -->
+      <a href="login.html"> <button type="button" class="btn btn-danger">Login</button></a>
+    </div>
+  </nav>
 
+  <!-- /---------------navbar-------------/ -->
    <div class='header'>
 
         <div>
             <img class='logo' src="pics/logo.png" alt="">
         </div>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-               <a href="login.html"> <button type="button" class="btn btn-warning">Login</button> </a> </div> 
+        <div class='header-nav'>
+          <div class='header-items'>
+              <span class='header-item header-item-1'>Men</span>
+              <div class='header-item-1-dropdown'> 
+                  <ul>
+                      <li>Category 1</li>
+                      <li>Category 1</li>
+                      <li>Category 1</li>
+                      <li>Category 1</li>
+                      <li>Category 1</li>
+                  </ul>
               </div>
-            </div>
-          </nav>
+          </div>
+          <div class='header-items'>
+              <span class='header-item header-item-2'>Women</span>
+<div class='header-item-2-dropdown'> 
+                  <ul>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                  </ul>
+              </div>
+          </div>
+          <div class='header-items'>
+              <span class='header-item header-item-3'>Kids</span>
+<div class='header-item-3-dropdown'> 
+                  <ul>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                      <li>Category 2</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <span>show navigation</span>
+  </div>
+
+  <div class='slider'>
+      <img class='slider-image' src="pics/G3FDbl.png" alt="">
+      <button class='slider-button'>Shop With Us</button>
+  </div> 
     </div>
 
     
@@ -98,23 +133,6 @@
         <button class='slider-button'>Shop With Us</button>
     </div> 
 
-    <!-- <div class='navbar'></div> -->
-<!-- <center><div class="container"> 
-
-	<a href="#"><img src="pics/pics/pics/man.jpg"> </a>
-       <button class="btn1">Men</button>
-
-	<a href="#"><img src="pics/pics/woman.jpg"></a>
-             <button class="btn2">Women</button>
-
-  <a href="#"><img src="pics/kid.jpg"></a>
-       <button class="btn3">Kids</button>
-       
-	
-
-</div>
-    </center> -->
-
     <div class='container'>
         <div class="item one"><img src="pics/man.jpg" alt="Man" class="ggg" width="400" height="400"></div>
         <div class="item two"><img src="pics/woman.jpg" alt="Man" class="ggg" width="400" height="400"></div>
@@ -123,10 +141,6 @@
         <div class="item five">Women</div>
         <div class="item six">Kids</div>
     </div> 
-
-<!-- <img src="kid.jpg" alt="Kids" class="image" width="400" height="400">
-  <div class="middle">
-   -->
 
     <footer class="footer">
         <div id="ftr">

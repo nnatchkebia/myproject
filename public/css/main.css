@@ -18,6 +18,13 @@ body {
 
 }
 
+.log {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    object-position:left;
+    border-radius: 10px;
+}
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -253,14 +260,13 @@ li {
 @keyframes bottomUp {
     0% {
         top: 54%;
-        opacity: 0;
+        opacity: 1;
     }
     100% {
         top: 50%;
         opacity: 1;
      }
 } 
-
 
 .title {
     color: white;
@@ -271,25 +277,6 @@ li {
     animation-name: zoomIn;
     animation-duration: 1s;
     animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-}
-
-.btn {
-    background-color: #00ffbf;
-    border: none;
-    padding: 30px 50px;
-    border-radius: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #55375a;
-    font-size: 30px;
-    cursor: pointer;
-    opacity: 0;
-    animation-name: zoomInFadeIn;
-    animation-duration: 1s;
-    animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
 
